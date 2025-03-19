@@ -67,3 +67,35 @@ header {
 .produto a:hover {
     background-color: #0088cc;
 }
+
+@media screen and (max-width: 600px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+        gap: 30px; /* Aumenta o espaçamento entre os produtos */
+        justify-content: space-around; /* Ajusta para um espaçamento uniforme */
+    }
+    .produto {
+        width: 90%; /* Garante que os produtos fiquem menores */
+        margin: 0 auto;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Melhora o destaque individual */
+    }
+    .produto img {
+        width: 100%; /* Ocupa toda a largura do contêiner */
+        height: 200px; /* Define uma altura uniforme */
+        object-fit: cover; /* Garante que a imagem preencha o espaço proporcionalmente */
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    .produto h2 {
+        font-size: 16px;
+    }
+    .produto a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
